@@ -5,7 +5,7 @@
             $path = "/" . $path;
         }
 
-        return WWW_ROOT . $path
+        return WWW_ROOT . $path;
     }
 
 ?>
