@@ -40,6 +40,16 @@
     <script src="<?php echo url_for("/static/vendor/popper/popper.min.js"); ?>"></script>
     <script src="<?php echo url_for("/static/vendor/bootstrap/js/bootstrap.min.js"); ?>"></script>
 
+    <?php
+
+      if(isset($contact_page)){
+        echo "<!-- Contact Form JavaScript -->";
+        echo "<script src=". url_for("/static/js/jqBootstrapValidation.js") . "></script>";
+        echo "<script src=" . url_for("/static/js/contact_me.js") . "></script>";
+      }
+
+    ?>
+
     <!-- Custom scripts for this template -->
     <script src="<?php echo url_for("/static/js/clean-blog.min.js"); ?>"></script>
 
