@@ -31,4 +31,17 @@
         }
     }
 
+    function confirm_query($db, $sql){
+        $result = mysqli_query($db, $sql);
+
+        if($result){
+            return true;
+        } else {
+            // UPDATE failed
+            echo mysqli_error($db);
+            db_disconnect($db);
+            exit;
+        }
+    }
+
 ?>
