@@ -16,13 +16,13 @@
 
 <?php include(SHARED_PATH . "/navigation.php") ?>
 
-<header class="masthead" style="background-image: url('<?php echo url_for("/static/" . $post["image"]); ?>')">
+<header class="masthead" style="background-image: url('<?php echo url_for("/static/" . h(u($post["image"]))); ?>')">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-heading">
-          <h1><?php echo $post["title"]; ?></h1>
-          <h2 class="subheading"><?php echo $post["subtitle"]; ?></h2>
+          <h1><?php echo h($post["title"]); ?></h1>
+          <h2 class="subheading"><?php echo h($post["subtitle"]); ?></h2>
           <span class="meta">Posted on <?php echo date("F j, Y", strtotime($post["created"])); ?></span>
         </div>
       </div>
