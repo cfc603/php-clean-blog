@@ -32,4 +32,4 @@ There are several issues which should be addressed before deploying to a product
 
 1. [Need Create, Update & Delete Views](https://github.com/cfc603/php-clean-blog/issues/1)
 2. [Needs authentication](https://github.com/cfc603/php-clean-blog/issues/2)
-3. [Needs authenticationEscape Blog Post body](https://github.com/cfc603/php-clean-blog/issues/3)
+3. [Escape Blog Post body](https://github.com/cfc603/php-clean-blog/issues/3)
